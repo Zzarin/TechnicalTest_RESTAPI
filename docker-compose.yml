@@ -1,0 +1,42 @@
+version: "3.8"
+
+services:
+  mysql:
+    restart: always
+    image: mysql:latest
+    container_name: mysqlDB
+    environment:
+      - MYSQL_ROOT_USER=root
+      - MYSQL_ROOT_PASSWORD=mysqlpw
+      - MYSQL_DB=exchange_rate
+    ports:
+      - 3306:3306
+    volumes:
+      - .internal/mysql/data:/var/lib/mysql
+  adminer:
+    image: adminer:latest
+    container_name: DB-management
+    depends_on:
+      - mysql
+    ports:
+      - 8045:8080
+  api:
+    depends_on:
+      - mysql
+    build:
+      dockerfile: Dockerfile
+    container_name: test-api
+    ports:
+      - 4057:4057
+    environment:
+      HTTP_ADDR: ":4057"
+      MYSQL_HOST: mysql
+      DB_PORT: 3306
+    links:
+      - mysql
+
+
+volumes:
+  someData:
+networks:
+  mysql-network:

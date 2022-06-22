@@ -1,0 +1,29 @@
+{"level":"info","ts":"2022-06-16T10:14:58.775+0500","caller":"cmd/main.go:331","msg":"Starting server..."}
+{"level":"info","ts":"2022-06-16T11:50:04.391+0500","caller":"cmd/main.go:356","msg":"Starting server..."}
+2022-06-16T12:10:56.764+0500	info	cmd/main.go:356	Starting server...
+main.main
+	E:/GolangProjects/TechnicalTest_RESTAPI/cmd/main.go:356
+runtime.main
+	C:/Go/src/runtime/proc.go:250
+2022-06-16T12:13:19.132+0500	info	cmd/main.go:356	Starting server...
+main.main
+	E:/GolangProjects/TechnicalTest_RESTAPI/cmd/main.go:356
+runtime.main
+	C:/Go/src/runtime/proc.go:250
+{"level":"info","ts":"2022-06-16T12:19:44.815+0500","caller":"cmd/main.go:359","msg":"Starting server...","stacktrace":"main.main\n\tE:/GolangProjects/TechnicalTest_RESTAPI/cmd/main.go:359\nruntime.main\n\tC:/Go/src/runtime/proc.go:250"}
+{"level":"info","ts":"2022-06-16T12:23:32.972+0500","caller":"cmd/main.go:358","msg":"Starting server...","stacktrace":"main.main\n\tE:/GolangProjects/TechnicalTest_RESTAPI/cmd/main.go:358\nruntime.main\n\tC:/Go/src/runtime/proc.go:250"}
+{"level":"info","ts":"2022-06-16T12:26:22.941+0500","caller":"cmd/main.go:358","msg":"Starting server...","stacktrace":"main.main\n\tE:/GolangProjects/TechnicalTest_RESTAPI/cmd/main.go:358\nruntime.main\n\tC:/Go/src/runtime/proc.go:250"}
+{"level":"info","ts":"2022-06-16T12:27:51.890+0500","caller":"cmd/main.go:358","msg":"Starting server...","stacktrace":"main.main\n\tE:/GolangProjects/TechnicalTest_RESTAPI/cmd/main.go:358\nruntime.main\n\tC:/Go/src/runtime/proc.go:250"}
+{"level":"info","ts":"2022-06-16T12:28:17.763+0500","caller":"cmd/main.go:358","msg":"Starting server...","stacktrace":"main.main\n\tE:/GolangProjects/TechnicalTest_RESTAPI/cmd/main.go:358\nruntime.main\n\tC:/Go/src/runtime/proc.go:250"}
+{"level":"info","ts":"2022-06-16T12:30:06.215+0500","caller":"cmd/main.go:358","msg":"Starting server...","stacktrace":"main.main\n\tE:/GolangProjects/TechnicalTest_RESTAPI/cmd/main.go:358\nruntime.main\n\tC:/Go/src/runtime/proc.go:250"}
+{"level":"info","ts":"2022-06-16T12:47:24.051+0500","caller":"cmd/main.go:376","msg":"Starting server...","stacktrace":"main.main\n\tE:/GolangProjects/TechnicalTest_RESTAPI/cmd/main.go:376\nruntime.main\n\tC:/Go/src/runtime/proc.go:250"}
+{"level":"info","ts":"2022-06-18T17:30:14.951+0500","caller":"TechnicalTest_RESTAPI/main.go:376","msg":"Starting server...","stacktrace":"main.main\n\tE:/GolangProjects/TechnicalTest_RESTAPI/main.go:376\nruntime.main\n\tC:/Go/src/runtime/proc.go:250"}
+{"level":"fatal","ts":"2022-06-18T17:30:14.967+0500","caller":"TechnicalTest_RESTAPI/main.go:378","msg":"Не удалось запустить сервер по порту 4050","stacktrace":"main.main\n\tE:/GolangProjects/TechnicalTest_RESTAPI/main.go:378\nruntime.main\n\tC:/Go/src/runtime/proc.go:250"}
+{"level":"info","ts":"2022-06-18T17:30:36.264+0500","caller":"TechnicalTest_RESTAPI/main.go:376","msg":"Starting server...","stacktrace":"main.main\n\tE:/GolangProjects/TechnicalTest_RESTAPI/main.go:376\nruntime.main\n\tC:/Go/src/runtime/proc.go:250"}
+{"level":"info","ts":"2022-06-18T17:33:30.682+0500","caller":"TechnicalTest_RESTAPI/main.go:376","msg":"Starting server...","stacktrace":"main.main\n\tE:/GolangProjects/TechnicalTest_RESTAPI/main.go:376\nruntime.main\n\tC:/Go/src/runtime/proc.go:250"}
+{"level":"info","ts":"2022-06-18T17:42:01.433+0500","caller":"TechnicalTest_RESTAPI/main.go:376","msg":"Starting server...","stacktrace":"main.main\n\tE:/GolangProjects/TechnicalTest_RESTAPI/main.go:376\nruntime.main\n\tC:/Go/src/runtime/proc.go:250"}
+{"level":"info","ts":"2022-06-19T16:59:37.447+0500","caller":"TechnicalTest_RESTAPI/main.go:376","msg":"Starting server...","stacktrace":"main.main\n\tE:/GolangProjects/TechnicalTest_RESTAPI/main.go:376\nruntime.main\n\tC:/Go/src/runtime/proc.go:250"}
+{"level":"info","ts":"2022-06-19T17:03:32.908+0500","caller":"TechnicalTest_RESTAPI/main.go:376","msg":"Starting server...","stacktrace":"main.main\n\tE:/GolangProjects/TechnicalTest_RESTAPI/main.go:376\nruntime.main\n\tC:/Go/src/runtime/proc.go:250"}
+{"level":"info","ts":"2022-06-19T21:29:40.830+0500","caller":"TechnicalTest_RESTAPI/main.go:376","msg":"Starting server...","stacktrace":"main.main\n\tE:/GolangProjects/TechnicalTest_RESTAPI/main.go:376\nruntime.main\n\tC:/Go/src/runtime/proc.go:250"}
+{"level":"info","ts":"2022-06-19T21:30:42.661+0500","caller":"TechnicalTest_RESTAPI/main.go:376","msg":"Starting server...","stacktrace":"main.main\n\tE:/GolangProjects/TechnicalTest_RESTAPI/main.go:376\nruntime.main\n\tC:/Go/src/runtime/proc.go:250"}
+{"level":"info","ts":"2022-06-19T21:31:23.212+0500","caller":"TechnicalTest_RESTAPI/main.go:376","msg":"Starting server...","stacktrace":"main.main\n\tE:/GolangProjects/TechnicalTest_RESTAPI/main.go:376\nruntime.main\n\tC:/Go/src/runtime/proc.go:250"}
