@@ -1,8 +1,9 @@
 package user
 
 type User struct {
-	Name   string
-	ApiKey string
+	ID     string `json:"id"`
+	Name   string `json:"name"`
+	ApiKey string `json:"apiKey"`
 }
 
 //var userInstance User

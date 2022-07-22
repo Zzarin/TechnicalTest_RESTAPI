@@ -1,4 +1,4 @@
-package mysqlDB
+package mysqlDB2312
 
 import (
 	"database/sql"
@@ -22,7 +22,7 @@ type ModelData struct {
 var databaseModel ModelData
 
 func Select(req *ModelRequest) (ModelData, error) {
-	db, err := sql.Open("mysqlDB", "root:pw@tcp(mysql:3306)/exchange_rate?parseTime=true")
+	db, err := sql.Open("mysqlDB", "root:pw@tcp(mysqlDB:3306)/exchange_rate?parseTime=true")
 	if err != nil {
 		fmt.Println(err)
 	}

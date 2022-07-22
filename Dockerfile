@@ -21,6 +21,6 @@ RUN go mod download
 #(the directory where the Dockerfile is located) into the current directory inside the image.
 RUN go build -o /api
 
-EXPOSE 4050
+EXPOSE 4057
 
 CMD ["/api"] 

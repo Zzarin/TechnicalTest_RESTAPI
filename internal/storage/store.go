@@ -1,8 +1,8 @@
 package storage
 
 import (
-	"TechnicalTest_RESTAPI/internal/logger"
-	"database/sql"
+	"TechnicalTest_RESTAPI/pkg/logger"
+	"github.com/jmoiron/sqlx"
 	"time"
 )
 
@@ -11,6 +11,7 @@ type RawData struct {
 	date     string
 }
 
+//нужен сервис
 type ModelRequest struct {
 	currency    string
 	dateUpdated time.Time
@@ -36,7 +37,7 @@ type ModelData struct {
 
 var databaseModel ModelData
 
-func (req *ModelRequest) Select(db *sql.DB, currency, date string) (ModelData, error) {
+func (req *ModelRequest) Select(db *sqlx.DB, currency, date string) (ModelData, error) {
 
 	rawDataInstance := create(currency, date)
 	if err := validation(rawDataInstance); err != nil {
@@ -49,15 +50,16 @@ func (req *ModelRequest) Select(db *sql.DB, currency, date string) (ModelData, e
 		return ModelData{}, err
 	}
 
-	db, err := sql.Open("mysql", "root:pw@tcp(mysql:3306)/exchange_rate?parseTime=true")
+	/*db, err := sql.Open("mysqlDB", "root:pw@tcp(mysqlDB:3306)/exchange_rate?parseTime=true")
 	if err != nil {
 		logger.Logger.Error("не удалось инициализировать базу данных с указанными DN или DSN")
 		return ModelData{}, err
-	}
+	}*/
 
+	//использовать sqlx
 	result := db.QueryRow("SELECT * FROM currency WHERE currency = ? AND date_updated = ?;", req.currency, req.dateUpdated.Format("2006-01-02 15:04:05"))
 	defer db.Close()
-	err = result.Scan(&databaseModel.Id, &databaseModel.Currency, &databaseModel.Rate, &databaseModel.DateUpdated, &databaseModel.DateRequested)
+	err := result.Scan(&databaseModel.Id, &databaseModel.Currency, &databaseModel.Rate, &databaseModel.DateUpdated, &databaseModel.DateRequested)
 
 	return databaseModel, err
 }

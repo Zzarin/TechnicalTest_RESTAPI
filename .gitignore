@@ -1,1 +1,7 @@
 .idea
+.internal
+auth
+delve
+logs
+migrations
+internal/storage
