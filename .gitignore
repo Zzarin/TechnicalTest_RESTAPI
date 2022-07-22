@@ -1,7 +1,9 @@
 .idea
 .internal
+.internal/mysql/data
 auth
 delve
 logs
+logs/text.log
 migrations
 internal/storage
